@@ -12,10 +12,10 @@
 
 <body>
 <nav class="menu-logos">
-  <img src="./src/imagens/registros-trajetorias.png" alt="Logo registros e trajetórias" class="logo-trajetoria">
 <a href="index.php">
   <img src="./src/imagens/logo-horizon-hcb.png" class="logo-hcb" alt="Logo HCB">
   </a>
+  <img src="./src/imagens/registros-trajetorias.png" alt="Logo registros e trajetórias" class="logo-trajetoria">
 </nav>
 <section>
 <div class="gallery-container">

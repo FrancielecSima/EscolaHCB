@@ -14,7 +14,7 @@
       <img src="./src/imagens/logo-horizon-hcb.png" alt="Logo HCB">
     </a>
     <img src="./src/imagens/registros-trajetorias.png" alt="Logo registros e trajetórias" class="trajetoria">
-    <a href="registros-trajetorias.php">
+    <a href="registros-trajetorias.php"  class="seta-avancar">
     <img src="./src/imagens/seta.png" alt="Seta para avançar">
     </a>
 </section>

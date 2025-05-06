@@ -42,7 +42,7 @@ body::before {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 200px; /* espaçamento entre imagens */
+    gap: 250px; /* espaçamento entre imagens */
   }
    .logo img {
     height: auto;
@@ -58,11 +58,15 @@ body::before {
   }
   
   .seta-avancar {
-    position: relative;
-    z-index: 1;
-    max-width: 200px;
+    max-width: 100px;
     width: 100%;
   }
+  
+  .seta-avancar img {
+    width: 100%; 
+    height: auto;
+  }
+  
 
   /* Responsivo para TV */
   @media screen and (min-width: 1920px) {
@@ -72,23 +76,52 @@ body::before {
     }
   
     .logo img {
-      max-width: 600px;
+      max-width: 350px;
     }
   
     .trajetoria {
-      max-width: 1000px;
+      max-width: 580px;
     }
   
     .seta-avancar {
-      max-width: 200px;
+      max-width: 120px;
+      width: 100%;
     }
   
     .conteudo-principal {
-      gap: 300px;
+      gap: 280px;
     }
   
     main {
       padding: 30px 60px;
     }
   }
+
+  /* Responsivo para Notebook*/
+  @media (min-width: 1024px) and (max-width: 1800px) {
+    body {
+      font-size: 1.5rem;
+      padding: 40px;
+    }
   
+    .logo img {
+      max-width: 250px;
+    }
+  
+    .trajetoria {
+      max-width: 460px;
+    }
+  
+    .seta-avancar {
+      max-width: 90px;
+      width: 100%;
+    }
+  
+    .conteudo-principal {
+      gap: 150px;
+    }
+  
+    main {
+      padding: 30px 60px;
+    }
+  }
