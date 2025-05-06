@@ -50,9 +50,13 @@ body::before {
     object-fit: contain;
   }
   .gallery-container {
-    max-width: 1000px;
-    margin: auto;
-    padding: 20px;
+    width: 100%;
+    height: calc(100vh - 100px); /* Altura da tela menos o menu */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 120px; /* Compensação para o menu fixo */
+    box-sizing: border-box;
   }
   
   .main-image {
@@ -98,7 +102,7 @@ body::before {
     top: 35%;
   }
   
-  .categories {
+  .categorias {
     margin-top: 10px;
     display: flex;
     justify-content: center;
@@ -106,15 +110,15 @@ body::before {
     gap: 10px;
   }
   
-  .categories span {
+  .categorias span {
     background: rgba(255, 255, 255, 0.2);
-    padding: 8px 15px;
-    border-radius: 20px;
+    padding:20px 60px;
+    border-radius: 10px;
     font-size: 14px;
     transition: 0.3s;
   }
   
-  .categories span.active {
+  .categorias span.active {
     background: white;
     color: #003f81;
     font-weight: bold;

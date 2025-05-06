@@ -48,17 +48,13 @@
   </div>
 
   <!-- Categorias -->
-  <div class="categories" id="categoryLabels">
-    <span>Categoria 1</span>
-    <span>Categoria 2</span>
-    <span>Categoria 3</span>
-    <span>Categoria 4</span>
-    <span>Categoria 2</span>
-    <span>Categoria 3</span>
-    <span>Categoria 4</span>
-    <span>Categoria 2</span>
-    <span>Categoria 3</span>
-    <span>Categoria 4</span>
+  <div class="categorias" id="categoryLabels">
+    <span>Escola</span>
+    <span>Provedoria</span>
+    <span>Docentes</span>
+    <span>Equipe</span>
+    <span>Alunos</span>
+    <span>Formados</span>
     <!-- ... até 15 categorias -->
   </div>
 </div>
