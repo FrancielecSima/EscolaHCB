@@ -7,13 +7,16 @@
   <link rel="stylesheet" href="src/style/index.css">
 </head>
 <body>
+    
   <main>
   <section class="conteudo-principal">
   <a href="index.php" class="logo">
       <img src="./src/imagens/logo-horizon-hcb.png" alt="Logo HCB">
     </a>
     <img src="./src/imagens/registros-trajetorias.png" alt="Logo registros e trajetórias" class="trajetoria">
-    <img src="./src/imagens/seta.png" alt="Seta para avançar" class="seta-avancar">
+    <a href="registros-trajetorias.php">
+    <img src="./src/imagens/seta.png" alt="Seta para avançar">
+    </a>
 </section>
 
   </main>

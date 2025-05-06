@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('../imagens/bg-azul.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  /* Camada de filtro por cima do background pois estava com muito ruído na imagem*/
+body::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(3, 57, 114, 0.6);
+    z-index: -1;
+  }
+
+  .menu-logos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+  }
+  
+  .logo-hcb{
+    max-height: 100px; /* ajuste conforme o tamanho desejado */
+    object-fit: contain;
+  }
+  .logo-trajetoria {
+    max-height: 120px; /* ajuste conforme o tamanho desejado */
+    object-fit: contain;
+  }
+  
+  
+  /* Responsivo para TV */
+  @media screen and (min-width: 1920px) {
+    body {
+      font-size: 1.5rem;
+      padding: 40px;
+    }
+  
+
+  }
+  
