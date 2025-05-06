@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('../imagens/bg-azul.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  /* Camada de filtro por cima do background pois estava com muito ruído na imagem*/
+body::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(3, 57, 114, 0.6);
+    z-index: -1;
+  }
+
+  main {
+    display: flex;
+    justify-content: center;
+    padding: 15px 30px;
+    width: 100%;
+    background-color: transparent;
+    position: relative;
+  }
+  
+ 
+  .conteudo-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 200px; /* espaçamento entre imagens */
+  }
+   .logo img {
+    height: auto;
+    width: 100%;
+    max-width: 300px;
+    object-fit: contain;
+  }
+  .trajetoria {
+    height: auto;
+    width: 100%;
+    max-width: 550px;
+    object-fit: contain;
+  }
+  
+  .seta-avancar {
+    position: relative;
+    z-index: 1;
+    max-width: 200px;
+    width: 100%;
+  }
+
+  /* Responsivo para TV */
+  @media screen and (min-width: 1920px) {
+    body {
+      font-size: 1.5rem;
+      padding: 40px;
+    }
+  
+    .logo img {
+      max-width: 600px;
+    }
+  
+    .trajetoria {
+      max-width: 1000px;
+    }
+  
+    .seta-avancar {
+      max-width: 200px;
+    }
+  
+    .conteudo-principal {
+      gap: 300px;
+    }
+  
+    main {
+      padding: 30px 60px;
+    }
+  }
+  
